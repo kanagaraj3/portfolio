@@ -59,6 +59,7 @@ body {
 }
 
 nav {
+    border: 3px solid #05161A;
     display: flex;
     flex-direction:row;
     margin-right: 30px;
@@ -569,6 +570,43 @@ box-shadow:  12px 12px 24px #161c1d,
     border-bottom-right-radius: 13px;
     text-decoration: none;
     font-size:medium;
+}
+.pdffile
+{
+    /* border: 3px solid white; */
+    max-width:400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pdffile #pdfObject
+{
+    width:0px;
+    height: 0px;
+    border: 3px solid dimgrey;
+    border-radius: 10px;
+}
+.certificate
+{
+    width: auto;
+    height: fit-content;
+}
+.certify
+{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.certify .certi img
+{
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;   
 }
 
 }
