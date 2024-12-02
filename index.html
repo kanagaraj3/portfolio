@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.7.1-web\css\all.min.css">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center w-full h-20 px-4 bg-black/90 fixed z-50">
+        <h1 id="logo" class="font-signature text-teal-500 ml-2">kanagaraj.dev</h1>
+        <!-- Desktop Menu (hidden on mobile) -->
+        <ul id="desktop-menu" class="hidden md:flex">
+            <li class="px-4 capitalize text-gray-200 hover:text-teal-500 duration-200 cursor-pointer">
+                <a href="#home">home</a>
+            </li>
+            <li class="px-4 capitalize text-gray-200 hover:text-teal-500 duration-200 cursor-pointer">
+                <a href="#about">about</a>
+            </li>
+            <li class="px-4 capitalize text-gray-200 hover:text-teal-500 duration-200 cursor-pointer">
+                <a href="#projects">projects</a>
+            </li>
+            <li class="px-4 capitalize text-gray-200 hover:text-teal-500 duration-200 cursor-pointer">
+                <a href="#contact">contact</a>
+            </li>
+        </ul>
+
+        <!-- Hamburger Button (visible on mobile) -->
+        <div id="mobile-menu-button" class="md:hidden cursor-pointer text-gray-200">
+            <i class="fas fa-bars text-2xl"></i> <!-- Font Awesome icon -->
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black/95 z-40">
+        <ul class="h-screen flex flex-col justify-center items-center">
+            <li><a href="#home" class="mobile-link text-4xl text-gray-200 hover:text-teal-500 py-6">Home</a></li>
+            <li><a href="#about" class="mobile-link text-4xl text-gray-200 hover:text-teal-500 py-6">About</a></li>
+            <li><a href="#projects" class="mobile-link text-4xl text-gray-200 hover:text-teal-500 py-6">Projects</a></li>
+            <li><a href="#contact" class="mobile-link text-4xl text-gray-200 hover:text-teal-500 py-6">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-4 bg-gray-900">
+        <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Content Section -->
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="text-4xl sm:text-7xl font-bold text-white mb-4 fade-in">
+                    I'm Kanagaraj, Developer
+                </h2>
+                <p class="text-gray-400 py-4 max-w-md mx-auto md:mx-0 fade-in">
+                    I'm passionate about building exceptional digital experiences.
+                    Currently, I love working on Full Stack applications using cutting-edge technologies.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#projects"
+                        class="group text-white px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-teal-500 to-teal-700 cursor-pointer fade-in">
+                        View My Projects
+                        <span class="group-hover:rotate-90 duration-300 ml-2">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <a href="https://github.com/kanagaraj3/Inventions-of-Kanagaraj" target="_blank"
+                            class="text-gray-300 hover:text-teal-500 transition-colors fade-in">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kanagaraj2002" target="_blank"
+                            class="text-gray-300 hover:text-teal-500 transition-colors fade-in">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Section -->
+            <div class="flex-1 mt-8 md:mt-0">
+                <div
+                    class="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-teal-500 to-purple-700 rounded-full overflow-hidden fade-in flex items-center justify-center">
+                    <img src="assets/robo.jpeg" alt="robot illustration" 
+                         class="w-3/4 h-3/4 object-contain ">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- About Section -->
+    <section id="about" class="w-full min-h-screen py-20">
+        <div class="max-w-screen-lg mx-auto px-4">
+            <div class="pb-8">
+                <h2 class="text-4xl font-bold inline border-b-4 border-teal-500">About Me</h2>
+            </div>
+            <div class="text-xl mt-10 text-gray-300">
+                <p class="mb-4">
+                    I'm Kanagaraj P, a skilled Java Full Stack Developer with expertise in Java, Angular, SQL, and Flask (Python). 
+                    I specialize in building efficient, user-centric web applications that solve real-world challenges and deliver high-impact solutions.
+                </p>
+                <p class="mb-4">
+                    With hands-on IT industry experience, I have successfully contributed to diverse projects, combining clean code practices, 
+                    innovative problem-solving, and teamwork to meet organizational goals. I thrive in environments that demand both creativity and precision.
+                </p>
+                <p>
+                    Looking ahead, I am eager to join a dynamic, forward-thinking organization where I can further refine my technical skills, 
+                    embrace new challenges, and contribute to developing cutting-edge solutions in the ever-evolving tech landscape.
+                </p>
+            </div>            
+
+            <div class="mt-10">
+                <h3 class="text-2xl font-bold text-teal-500 mb-4">Skills</h3>
+                <div id="skills" class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        HTML
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        CSS
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Bootstrap
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        JavaScript
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Angular
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Java
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Spring
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        SQL
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Database
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Python
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Flask
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        Git & GitHub
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="w-full min-h-screen py-20">
+        <div class="max-w-screen-lg mx-auto px-4">
+            <div class="pb-8">
+                <h2 class="text-4xl font-bold inline border-b-4 border-teal-500">Projects</h2>
+                <p class="py-6 text-gray-300">Check out some of my recent work</p>
+            </div>
+            <div id="projects-cards" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Digitalized Menu Card -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
+                    <img src="assets/menuCard.png" alt="Digitalized Menu Card" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">Digitalized Menu Card</h3>
+                        <p class="text-gray-300 mb-4">An interactive and responsive digital menu for Hi-Fi Cafe. Built using HTML, CSS, and Bootstrap.</p>
+                        <div id="Card-skills" class="flex gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">JavaScript</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <a href="#" class="px-4 py-2 bg-teal-500 rounded-md hover:bg-teal-600">Demo</a>
+                        <a href="#" class="px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 ml-2">Code</a>
+                    </div>
+                </div>
+            
+                <!-- Library Management System -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
+                    <img src="assets/library.jpeg" alt="Library Management System" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">Library Management System</h3>
+                        <p class="text-gray-300 mb-4">A Python Flask-based system to manage books and user transactions. Built with HTML, CSS, and Bootstrap.</p>
+                        <div id="Card-skills" class="flex gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Python</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <a href="#" class="px-4 py-2 bg-teal-500 rounded-md hover:bg-teal-600">Demo</a>
+                        <a href="#" class="px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 ml-2">Code</a>
+                    </div>
+                </div>
+            
+                <!-- URL Shortener -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
+                    <img src="assets/url.png" alt="URL Shortener" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">URL Shortener</h3>
+                        <p class="text-gray-300 mb-4">A Python Flask-based URL shortener that converts long URLs into short links. Built with HTML, CSS, and Bootstrap.</p>
+                        <div id="Card-skills" class="flex gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Python</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <a href="#" class="px-4 py-2 bg-teal-500 rounded-md hover:bg-teal-600">Demo</a>
+                        <a href="#" class="px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 ml-2">Code</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w-full min-h-screen py-20">
+        <div class="max-w-screen-lg mx-auto px-4">
+            <div class="pb-8">
+                <h2 class="text-4xl font-bold inline border-b-4 border-teal-500">Contact</h2>
+                <p class="py-6 text-gray-300">Get in touch with me</p>
+            </div>
+            <form id="contactForm" class="flex flex-col w-full md:w-1/2 mx-auto">
+                <input type="text" id="name" name="name" placeholder="Enter your name"
+                    class="p-2 bg-gray-800 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-teal-500 mb-4" >
+                <span id="nameError" class="text-red-500 text-sm mb-4 hidden"></span>
+    
+                <input type="email" id="email" name="email" placeholder="Enter your email"
+                    class="p-2 bg-gray-800 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-teal-500 mb-4" >
+                <span id="emailError" class="text-red-500 text-sm mb-4 hidden"></span>
+    
+                <textarea id="message" name="message" rows="10" placeholder="Enter your message"
+                    class="p-2 bg-gray-800 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-teal-500 mb-4" ></textarea>
+                <span id="messageError" class="text-red-500 text-sm mb-4 hidden"></span>
+    
+                <button type="submit"
+                    class="text-white bg-gradient-to-r from-teal-500 to-teal-700 px-6 py-3 rounded-md hover:scale-105 duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-screen-lg mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-teal-500">Let's Connect</h3>
+            <p class="mt-2 text-gray-300">Feel free to reach out for collaborations or just a friendly hello</p>
+            <div class="flex justify-center gap-6 mt-4">
+                <a href="https://github.com/kanagaraj3/Inventions-of-Kanagaraj" class="text-gray-300 hover:text-teal-500 transition-colors"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/kanagaraj2002" class="text-gray-300 hover:text-teal-500 transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="mailto:kanagarajkmk4@gmail.com" class="text-gray-300 hover:text-teal-500 transition-colors"><i class="fab fa-google fa-lg"></i></a>   
+                <a href="https://www.instagram.com/kanagaraj.dev/profilecard/?igsh=MWliMnRsaHNjNnpkcw==" class="text-gray-300 hover:text-teal-500 transition-colors"><i class="fab fa-instagram fa-lg"></i></a>                        
+            </div>
+            <p class="text-gray-400 text-sm mt-4">© 2024 Kanagaraj.dev. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const form = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const messageError = document.getElementById('messageError');
+    
+        form.addEventListener('submit', function (event) {
+            console.log('Form submission event triggered.'); // Debug log
+            event.preventDefault(); // Prevent form refresh
+            let isValid = true;
+    
+            if (nameInput.value.trim().length < 3) {
+                nameError.textContent = "Name must be at least 3 characters.";
+                nameError.classList.remove('hidden');
+                isValid = false;
+            } else {
+                nameError.textContent = "";
+                nameError.classList.add('hidden');
+            }
+    
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                emailError.textContent = "Enter a valid email address.";
+                emailError.classList.remove('hidden');
+                isValid = false;
+            } else {
+                emailError.textContent = "";
+                emailError.classList.add('hidden');
+            }
+    
+            if (messageInput.value.trim().length < 10) {
+                messageError.textContent = "Message must be at least 10 characters.";
+                messageError.classList.remove('hidden');
+                isValid = false;
+            } else {
+                messageError.textContent = "";
+                messageError.classList.add('hidden');
+            }
+    
+            if (isValid) {
+                const uniqueId = Date.now();
+                console.log('Form is valid. Preparing data object...');
+                const formObject = {
+                    id: uniqueId,
+                    name: nameInput.value.trim(),
+                    email: emailInput.value.trim(),
+                    message: messageInput.value.trim(),
+                };
+    
+                console.log('Form data prepared:', formObject); 
+    
+                try {
+                    let dataStore = JSON.parse(localStorage.getItem('formData')) || [];
+                    dataStore.push(formObject);
+                    localStorage.setItem('formData', JSON.stringify(dataStore));
+                } catch (error) {
+                    console.error('Error storing data in localStorage:', error);
+                }
+                form.reset();
+                alert('Message sent successfully!');
+            } else {
+                console.log('Form is invalid. Fix errors and try again.');
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
