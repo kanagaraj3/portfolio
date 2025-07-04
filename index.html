@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="fontawesome-free-6.7.1-web\css\all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 
 <body class="bg-black text-white font-sans">
@@ -82,9 +83,8 @@
             <!-- Image Section -->
             <div class="flex-1 mt-8 md:mt-0">
                 <div
-                    class="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-teal-500 to-purple-700 rounded-full overflow-hidden fade-in flex items-center justify-center">
-                    <img src="assets/robo.jpeg" alt="robot illustration" 
-                         class="w-3/4 h-3/4 object-contain ">
+                    class="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-teal-700 to-teal-1200 rounded-full overflow-hidden fade-in flex items-center justify-center">
+                    <img src="assets/ghibli_kana_img.png" alt="Kanagaraj" class="w-3/4 h-3/4 object-contain ">
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
 
 
     <!-- About Section -->
-    <section id="about" class="w-full min-h-screen py-20">
+    <section id="about" class="w-full min-h-screen py-20" data-aos="fade-up">
         <div class="max-w-screen-lg mx-auto px-4">
             <div class="pb-8">
                 <h2 class="text-4xl font-bold inline border-b-4 border-teal-500">About Me</h2>
@@ -117,112 +117,143 @@
             <div class="mt-10">
                 <h3 class="text-2xl font-bold text-teal-500 mb-4">Skills</h3>
                 <div id="skills" class="grid grid-cols-2 sm:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        HTML
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        CSS
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Bootstrap
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        JavaScript
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Angular
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Java
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Spring
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        SQL
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Database
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Python
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Flask
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">
-                        Git & GitHub
-                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Java</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Spring Boot</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Angular</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Python</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Flask</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">HTML5</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">CSS3</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">JavaScript</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Bootstrap</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">RESTful APIs</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">PostgreSQL</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">MySQL</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Oracle</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">PL/SQL</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Git</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">GitHub</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Postman</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">VS Code</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Spring Tool Suite (STS)</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Swagger</div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors">Responsive UI</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="w-full min-h-screen py-20">
+    <section id="projects" class="w-full min-h-screen py-20" data-aos="fade-up">
         <div class="max-w-screen-lg mx-auto px-4">
-            <div class="pb-8">
+            <div class="pb-8" data-aos="fade-down">
                 <h2 class="text-4xl font-bold inline border-b-4 border-teal-500">Projects</h2>
                 <p class="py-6 text-gray-300">Check out some of my recent work</p>
             </div>
             <div id="projects-cards" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <!-- Digitalized Menu Card -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
-                    <img src="assets/menuCard.png" alt="Digitalized Menu Card" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-teal-500 mb-2">Digitalized Menu Card</h3>
-                        <p class="text-gray-300 mb-4">An interactive and responsive digital menu for Hi-Fi Cafe. Built using HTML, CSS, and Bootstrap.</p>
-                        <div id="Card-skills" class="flex gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">JavaScript</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Bootstrap</span>
+                <!-- Recurring Deposit Application -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden flex flex-col h-full hover:scale-105 transition duration-500 ease-in-out" data-aos="zoom-in">
+                    <div class="w-full h-40 bg-gray-700 flex items-center justify-center">
+                        <img src="assets/rd_img.jpg" alt="Recurring Deposit Application" class="object-cover h-full w-full" style="object-fit:cover;"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">Recurring Deposit Application</h3>
+                        <p class="text-gray-300 mb-4 text-sm">UI lead for a banking app to manage recurring deposits. Built with Angular, Java REST APIs, and PostgreSQL.</p>
+                        <div id="Card-skills" class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Angular</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Java</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">REST API</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">PostgreSQL</span>
                         </div>
-                        <a href="#" class="px-4 py-2 bg-teal-500 rounded-md hover:bg-teal-600">Demo</a>
-                        <a href="#" class="px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 ml-2">Code</a>
                     </div>
                 </div>
-            
-                <!-- Library Management System -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
-                    <img src="assets/library.jpeg" alt="Library Management System" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-teal-500 mb-2">Library Management System</h3>
-                        <p class="text-gray-300 mb-4">A Python Flask-based system to manage books and user transactions. Built with HTML, CSS, and Bootstrap.</p>
-                        <div id="Card-skills" class="flex gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Python</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Bootstrap</span>
+                <!-- Hospital Management System -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden flex flex-col h-full hover:scale-105 transition duration-500 ease-in-out" data-aos="zoom-in">
+                    <div class="w-full h-40 bg-gray-700 flex items-center justify-center">
+                        <img src="assets/hms_img.jpg" alt="Hospital Management System" class="object-cover h-full w-full" style="object-fit:cover;"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">Hospital Management System</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Full stack app for hospital appointments, records, and billing. Used Angular, Spring Boot, and PostgreSQL.</p>
+                        <div id="Card-skills" class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Angular</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Java</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Spring Boot</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">PostgreSQL</span>
                         </div>
-                        <a href="#" class="px-4 py-2 bg-teal-500 rounded-md hover:bg-teal-600">Demo</a>
-                        <a href="#" class="px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 ml-2">Code</a>
                     </div>
                 </div>
-            
-                <!-- URL Shortener -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
-                    <img src="assets/url.png" alt="URL Shortener" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold text-teal-500 mb-2">URL Shortener</h3>
-                        <p class="text-gray-300 mb-4">A Python Flask-based URL shortener that converts long URLs into short links. Built with HTML, CSS, and Bootstrap.</p>
-                        <div id="Card-skills" class="flex gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Python</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">HTML</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">CSS</span>
-                            <span class="px-2 py-1 bg-gray-700 rounded-full text-sm">Bootstrap</span>
+                <!-- Banking Management System -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden flex flex-col h-full hover:scale-105 transition duration-500 ease-in-out" data-aos="zoom-in">
+                    <div class="w-full h-40 bg-gray-700 flex items-center justify-center">
+                        <img src="assets/bms_img.jpg" alt="Banking Management System" class="object-cover h-full w-full" style="object-fit:cover;"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">Banking Management System</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Dashboards for banking with real-time updates and secure login. Built with Angular, Java, JPA, Spring Security.</p>
+                        <div id="Card-skills" class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Angular</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Java</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">JPA</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Spring Security</span>
                         </div>
-                        <a href="#" class="px-4 py-2 bg-teal-500 rounded-md hover:bg-teal-600">Demo</a>
-                        <a href="#" class="px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 ml-2">Code</a>
+                    </div>
+                </div>
+                <!-- Autonomous Deweeder -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden flex flex-col h-full hover:scale-105 transition duration-500 ease-in-out" data-aos="zoom-in">
+                    <div class="w-full h-40 bg-gray-700 flex items-center justify-center">
+                        <img src="assets/deweeder_img.jpg" alt="Autonomous Deweeder" class="object-cover h-full w-full" style="object-fit:cover;"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">Autonomous Deweeder</h3>
+                        <p class="text-gray-300 mb-4 text-sm">AI-based IoT system for automatic weed removal in agriculture. Python and sensor automation.</p>
+                        <div id="Card-skills" class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Sensors</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- MCQ Remote System -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden flex flex-col h-full hover:scale-105 transition duration-500 ease-in-out" data-aos="zoom-in">
+                    <div class="w-full h-40 bg-gray-700 flex items-center justify-center">
+                        <img src="assets/mcq_img.jpg" alt="MCQ Remote System" class="object-cover h-full w-full" style="object-fit:cover;"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">MCQ Remote System</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Web app for remote MCQ quizzes in schools. Built with HTML, CSS, JavaScript.</p>
+                        <div id="Card-skills" class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">HTML</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">CSS</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- IoT Sensor Dashboard -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden flex flex-col h-full hover:scale-105 transition duration-500 ease-in-out" data-aos="zoom-in">
+                    <div class="w-full h-40 bg-gray-700 flex items-center justify-center">
+                        <img src="assets/iot_weather_img.jpg" alt="IoT Sensor Dashboard" class="object-cover h-full w-full" style="object-fit:cover;"/>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-teal-500 mb-2">IoT Sensor Dashboard</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Real-time dashboard for weather/soil sensors. REST APIs, Angular UI, PostgreSQL.</p>
+                        <div id="Card-skills" class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">HTML</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">CSS</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Java</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">Spring Boot</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">JPA</span>
+                            <span class="px-2 py-1 bg-gray-700 rounded-full text-xs">SQL</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="w-full min-h-screen py-20">
+    <section id="contact" class="w-full min-h-screen py-20" data-aos="fade-up">
         <div class="max-w-screen-lg mx-auto px-4">
             <div class="pb-8">
                 <h2 class="text-4xl font-bold inline border-b-4 border-teal-500">Contact</h2>
@@ -250,7 +281,7 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-black py-8">
+    <footer class="bg-black py-8" data-aos="fade-up">
         <div class="max-w-screen-lg mx-auto px-4 text-center">
             <h3 class="text-2xl font-bold text-teal-500">Let's Connect</h3>
             <p class="mt-2 text-gray-300">Feel free to reach out for collaborations or just a friendly hello</p>
@@ -260,7 +291,7 @@
                 <a href="mailto:kanagarajkmk4@gmail.com" class="text-gray-300 hover:text-teal-500 transition-colors"><i class="fab fa-google fa-lg"></i></a>   
                 <a href="https://www.instagram.com/kanagaraj.dev/profilecard/?igsh=MWliMnRsaHNjNnpkcw==" class="text-gray-300 hover:text-teal-500 transition-colors"><i class="fab fa-instagram fa-lg"></i></a>                        
             </div>
-            <p class="text-gray-400 text-sm mt-4">© 2024 Kanagaraj.dev. All rights reserved.</p>
+            <p class="text-gray-400 text-sm mt-4">© 2025 Kanagaraj.dev. All rights reserved.</p>
         </div>
     </footer>
     <script>
@@ -332,5 +363,12 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
 </body>
 </html>
